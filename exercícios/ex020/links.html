@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;           
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        a {
+            color: rgb(20, 36, 182);
+            text-decoration: none; /* Remove o sublinhado do link*/
+            font-weight: 600;
+        }
+
+        a:visited {
+            color: rgb(13, 23, 107)
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        
+        a:active {
+            color: rgb(119, 0, 255);
+        }
+
+        .especial {
+            background-color: rgba(96, 24, 155, 0.411);
+        }
+
+        .especial::before {
+            content: ' \2192  ';
+            color: rgb(255, 0, 0);
+        }
+
+        .especial::after {
+            content: ' \2190 ' ;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="blank" rel="external">Repositorio GitHub Guanabara</a></li>
+        <li><a href="https://www.youtube.com/@nickn4" target="_blank" rel="external" class="especial">Canal Youtube</a></li>
+        <li><a href="https://www.y2meta.com/pt139" target="_blank" rel="nofollow">Site para baixar músicas</a></li>
+    </ul>
+
+    <!--  ul>li*3>a
+       shorthand para criar uma "ul" (pode ser usado com "ol") com maior rapidez
+
+       sendo o número depois de "li" a quantidade de "li"
+
+       o "a" dos links também pode ser substituido por "p" (parágrafo) por exemplo.
+    -->
+</html>
