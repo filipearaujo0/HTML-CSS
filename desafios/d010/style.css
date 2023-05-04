@@ -63,9 +63,10 @@ main {
     
 }
 
-main > h1 {
+section > h1 {
         margin: 0px;
         font-family: 'Idroid', sans-serif;
+        font-size: 2em;
         color: #0b4727;
 }
 
